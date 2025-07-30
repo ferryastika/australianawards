@@ -1,375 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Report: The Evolution of Australia's Cyber Security Policy</title>
+    <title>Notes Repository | Welcome</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Warm Neutrals & Subtle Accents -->
-    <!-- Application Structure Plan: The SPA is designed as a thematic, single-page dashboard. A sticky navigation bar acts as an interactive timeline, allowing users to jump to sections for each of the three major strategy eras (2016, 2020, 2023-2030). This non-linear navigation prioritizes user-led exploration over the report's linear structure. Each era's section uses a combination of large-format statistics, explanatory text, and interactive charts to detail its philosophy and key initiatives. A final "Thematic Analysis" section synthesizes the overarching trends across all eras, providing a conclusive narrative. This structure was chosen to make a dense policy report digestible and engaging, allowing users to either get a quick overview or dive deep into a specific period. -->
-    <!-- Visualization & Content Choices: 
-        - Report Info: 2016 vs 2020 Funding -> Goal: Compare -> Viz: Bar Chart -> Justification: Direct, clear comparison of two values -> Library: Chart.js.
-        - Report Info: 2020 SOCI Act Sectors -> Goal: Organize/Inform -> Viz: Donut Chart -> Justification: Shows the 11 sectors as distinct parts of a new, larger whole -> Library: Chart.js.
-        - Report Info: 2023-2030 Six Shields -> Goal: Organize -> Viz: Radar Chart -> Justification: Effectively displays multiple, equally important pillars of a single strategy in a balanced way -> Library: Chart.js.
-        - Report Info: Public-Private Compact Evolution -> Goal: Change -> Viz: Styled HTML Timeline -> Justification: A simple, clear visual progression is more effective for this qualitative concept than a chart -> Method: HTML/Tailwind.
-        - Report Info: Regulatory Trend -> Goal: Change -> Viz: Line Chart -> Justification: Visually represents the conceptual increase in regulatory intensity over time, telling a clear story of the policy shift -> Library: Chart.js.
-    -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F8F7F4;
-            color: #403F3D;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
         }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 320px;
-            max-height: 400px;
+        .link-item {
+            transition: all 0.2s ease-in-out;
         }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
-        }
-        .nav-link {
-            transition: all 0.3s ease;
-        }
-        .nav-link.active {
-            color: #D97706;
-            border-bottom-color: #D97706;
+        .link-item:hover {
+            transform: translateX(4px);
+            background-color: #fef3c7;
         }
     </style>
 </head>
-<body>
+<body class="text-gray-800">
 
-    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
-        <nav class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4 border-b border-gray-200">
-                <h1 class="text-xl font-bold text-gray-800">Cyber Policy Evolution</h1>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#era-2016" class="nav-link text-gray-600 hover:text-amber-600 border-b-2 border-transparent pb-1">2016 Strategy</a>
-                    <a href="#era-2020" class="nav-link text-gray-600 hover:text-amber-600 border-b-2 border-transparent pb-1">2020 Strategy</a>
-                    <a href="#era-2030" class="nav-link text-gray-600 hover:text-amber-600 border-b-2 border-transparent pb-1">2030 Strategy</a>
-                    <a href="#analysis" class="nav-link text-gray-600 hover:text-amber-600 border-b-2 border-transparent pb-1">Analysis</a>
-                </div>
-            </div>
-        </nav>
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b-4 border-[#FFC107]">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://australiaawardsindonesia.org/images/logo_aai_2.png" alt="Australia Awards Logo" class="h-12 md:h-14">
+                <span class="text-xl md:text-2xl font-bold text-[#002B55]">Notes Repository</span>
+            </a>
+        </div>
     </header>
 
-    <main class="container mx-auto p-4 md:p-8">
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-16">
+        
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold text-[#002B55] mb-2">Welcome to the Repository</h1>
+            <p class="text-lg text-gray-600 mb-10">A centralized collection of our key documents and resources. Select a link below to get started.</p>
 
-        <section class="text-center py-16 md:py-24">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">Australia's Cyber Evolution</h2>
-            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">An interactive analysis of the nation's journey from a partnership-based approach to a global leader in cyber security, tracing the key shifts in policy, investment, and philosophy.</p>
-        </section>
+            <div class="space-y-8">
+                
+                <!-- Section 1: Core Information -->
+                <div>
+                    <h2 class="text-2xl font-bold border-b-2 border-[#002B55] pb-2 mb-4">Core Information</h2>
+                    <div class="space-y-3">
+                        <a href="about.html" class="block p-4 bg-white rounded-lg shadow-sm border border-gray-200 link-item">
+                            <h3 class="font-semibold text-lg text-[#002B55]">About Our Organization</h3>
+                            <p class="text-gray-600 text-sm">Learn about our mission, values, and history.</p>
+                        </a>
+                        <a href="programs.html" class="block p-4 bg-white rounded-lg shadow-sm border border-gray-200 link-item">
+                            <h3 class="font-semibold text-lg text-[#002B55]">Programs & Opportunities</h3>
+                            <p class="text-gray-600 text-sm">Explore the various programs and opportunities we offer.</p>
+                        </a>
+                    </div>
+                </div>
 
-        <div class="space-y-24">
+                <!-- Section 2: Updates -->
+                <div>
+                    <h2 class="text-2xl font-bold border-b-2 border-[#002B55] pb-2 mb-4">Updates & Events</h2>
+                    <div class="space-y-3">
+                        <a href="news.html" class="block p-4 bg-white rounded-lg shadow-sm border border-gray-200 link-item">
+                            <h3 class="font-semibold text-lg text-[#002B55]">Latest News</h3>
+                            <p class="text-gray-600 text-sm">Stay up-to-date with our recent announcements and events.</p>
+                        </a>
+                    </div>
+                </div>
 
-            <section id="era-2016" class="scroll-mt-24">
-                <div class="text-center mb-12">
-                    <span class="text-amber-600 font-semibold">2016 STRATEGY</span>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">A National Call to Partnership</h3>
-                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">The initial strategy focused on voluntary collaboration and economic enablement, framing cyber security as a shared responsibility to build national consensus.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-                    <div class="lg:col-span-2 bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-4">Key Pillars of Action</h4>
-                        <div class="space-y-4">
-                            <div class="p-4 bg-amber-50 rounded-lg"><strong>National Partnership:</strong> Emphasizing shared responsibility between government and industry.</div>
-                            <div class="p-4 bg-amber-50 rounded-lg"><strong>Strong Defences:</strong> Improving capabilities through voluntary guidelines and health checks.</div>
-                            <div class="p-4 bg-amber-50 rounded-lg"><strong>Global Responsibility:</strong> Championing an open, free, and secure internet.</div>
-                            <div class="p-4 bg-amber-50 rounded-lg"><strong>Growth & Innovation:</strong> Cultivating a domestic cyber security industry via AustCyber.</div>
-                            <div class="p-4 bg-amber-50 rounded-lg"><strong>A Cyber Smart Nation:</strong> Addressing the skills shortage and raising public awareness.</div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3 bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">Initial Investment & Core Philosophy</h4>
-                        <p class="text-gray-600 mb-6">With a foundational investment of $230M, the strategy's philosophy was that online security and freedom were mutually reinforcing, building the trust needed for economic prosperity.</p>
-                        <div class="text-center bg-gray-50 p-6 rounded-lg">
-                            <p class="text-gray-600 text-sm">Total Investment (4 Years)</p>
-                            <p class="text-6xl font-extrabold text-amber-700 mt-2">$230M</p>
-                            <p class="text-gray-500 mt-2">To establish collaborative institutions like the Joint Cyber Security Centres (JCSCs).</p>
-                        </div>
+                <!-- Section 3: Support -->
+                <div>
+                    <h2 class="text-2xl font-bold border-b-2 border-[#002B55] pb-2 mb-4">Support & Contact</h2>
+                    <div class="space-y-3">
+                        <a href="contact.html" class="block p-4 bg-white rounded-lg shadow-sm border border-gray-200 link-item">
+                            <h3 class="font-semibold text-lg text-[#002B55]">Contact Information</h3>
+                            <p class="text-gray-600 text-sm">Get in touch with our team for questions or support.</p>
+                        </a>
+                         <a href="faq.html" class="block p-4 bg-white rounded-lg shadow-sm border border-gray-200 link-item">
+                            <h3 class="font-semibold text-lg text-[#002B55]">Frequently Asked Questions (FAQ)</h3>
+                            <p class="text-gray-600 text-sm">Find answers to common questions about our organization.</p>
+                        </a>
                     </div>
                 </div>
-            </section>
 
-            <section id="era-2020" class="scroll-mt-24">
-                <div class="text-center mb-12">
-                    <span class="text-amber-600 font-semibold">2020 STRATEGY</span>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">A Pivot to Proactive Defence & Regulation</h3>
-                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Confronted by an escalating threat landscape, this era marked a decisive shift towards sovereign intervention, hard law, and direct government action.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">Landmark Funding Increase</h4>
-                        <p class="text-gray-600 mb-4">The strategy saw a nearly seven-fold increase in funding, signaling a major escalation in commitment to empower agencies like the ASD and AFP to proactively disrupt threats.</p>
-                        <div class="chart-container">
-                            <canvas id="fundingChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">Expanding Critical Infrastructure Protection</h4>
-                        <p class="text-gray-600 mb-4">The SOCI Act was radically expanded from 4 to 11 sectors, imposing legally binding security obligations on a much wider range of vital industries.</p>
-                        <div class="chart-container">
-                            <canvas id="sociChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="era-2030" class="scroll-mt-24">
-                <div class="text-center mb-12">
-                    <span class="text-amber-600 font-semibold">2023-2030 STRATEGY</span>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Architecting Systemic Resilience</h3>
-                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">A whole-of-nation vision to make Australia a world leader in cyber security by 2030, focusing on re-engineering the entire digital ecosystem to be inherently secure.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">The Six Interlocking Shields</h4>
-                        <p class="text-gray-600 mb-4">This strategy introduces a multi-layered, defence-in-depth framework designed to protect every facet of Australia's digital life, from citizens to global partnerships.</p>
-                        <div class="chart-container">
-                            <canvas id="shieldsChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">Implementation & Key Initiatives</h4>
-                        <p class="text-gray-600 mb-6">The strategy is pragmatic, rolling out in three distinct horizons and introducing systemic changes like mandatory "secure-by-design" standards for IoT devices and a "no-fault" ransomware reporting scheme.</p>
-                        <div class="space-y-3">
-                            <div class="p-4 bg-gray-50 rounded-lg"><strong>Horizon 1 (2023-25):</strong> Strengthen Foundations</div>
-                            <div class="p-4 bg-gray-50 rounded-lg"><strong>Horizon 2 (2026-28):</strong> Scale Cyber Maturity</div>
-                            <div class="p-4 bg-gray-50 rounded-lg"><strong>Horizon 3 (2029-30):</strong> Advance Global Leadership</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="analysis" class="scroll-mt-24">
-                <div class="text-center mb-12">
-                    <span class="text-amber-600 font-semibold">THEMATIC ANALYSIS</span>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Key Trends in Policy Evolution</h3>
-                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Across the three strategies, clear patterns emerge, charting Australia's maturation as a cyber power and its changing approach to governance, industry, and national security.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">The Unrelenting March of Regulation</h4>
-                        <p class="text-gray-600 mb-4">The policy arc shows a decisive shift from voluntary guidance to hard law, reflecting the conclusion that legally binding governance is essential for national defence.</p>
-                        <div class="chart-container">
-                            <canvas id="regulationChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8">
-                        <h4 class="text-lg font-semibold text-gray-700 mb-2">The Shifting Public-Private Compact</h4>
-                        <p class="text-gray-600 mb-4">The relationship between government and industry has transformed from voluntary collaboration to a more sophisticated model of co-designed leadership.</p>
-                        <div class="mt-6 space-y-4">
-                            <div class="p-4 rounded-lg border border-gray-200">
-                                <p class="font-bold text-gray-800 text-sm">2016: Voluntary Partnership</p>
-                                <p class="text-xs text-gray-600">Government as facilitator and enabler.</p>
-                            </div>
-                            <div class="p-4 rounded-lg border border-gray-200">
-                                <p class="font-bold text-gray-800 text-sm">2020: Coercive Partnership</p>
-                                <p class="text-xs text-gray-600">Collaboration becomes a legal requirement for critical infrastructure.</p>
-                            </div>
-                            <div class="p-4 rounded-lg border border-gray-200">
-                                <p class="font-bold text-gray-800 text-sm">2023+: Co-Designed Leadership</p>
-                                <p class="text-xs text-gray-600">Top-down ambition meets bottom-up expertise.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
+
     </main>
-    
-    <footer class="mt-24 bg-gray-800 text-white">
-        <div class="container mx-auto py-8 px-4 text-center">
-            <p>Data and analysis based on "The Evolution of Australia's National Cyber Security Policy: From Partnership to Systemic Resilience."</p>
-            <p class="text-sm text-gray-400 mt-2">Interactive SPA created for educational and analytical purposes.</p>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-16">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Your Organization. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const chartColors = {
-                primary: '#D97706',
-                secondary: '#FBBF24',
-                tertiary: '#F59E0B',
-                light: '#FEF3C7',
-                dark: '#92400E',
-                grid: 'rgba(0, 0, 0, 0.05)',
-                text: '#403F3D'
-            };
-
-            const tooltipTitleCallback = (tooltipItems) => {
-                const item = tooltipItems[0];
-                let label = item.chart.data.labels[item.dataIndex];
-                if (Array.isArray(label)) {
-                    return label.join(' ');
-                }
-                return label;
-            };
-
-            const defaultChartOptions = {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: chartColors.text,
-                            font: {
-                                family: "'Inter', sans-serif"
-                            }
-                        }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: tooltipTitleCallback
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        ticks: { color: chartColors.text },
-                        grid: { color: chartColors.grid }
-                    },
-                    x: {
-                        ticks: { color: chartColors.text },
-                        grid: { color: chartColors.grid }
-                    }
-                }
-            };
-
-            const wrapLabel = (label, maxLength = 16) => {
-                if (typeof label !== 'string' || label.length <= maxLength) return label;
-                const words = label.split(' ');
-                const lines = [];
-                let currentLine = '';
-                words.forEach(word => {
-                    if ((currentLine + ' ' + word).length > maxLength) {
-                        lines.push(currentLine.trim());
-                        currentLine = '';
-                    }
-                    currentLine += word + ' ';
-                });
-                lines.push(currentLine.trim());
-                return lines;
-            };
-
-            new Chart(document.getElementById('fundingChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['2016 Strategy', '2020 Strategy'],
-                    datasets: [{
-                        label: 'Funding (in Billions AUD)',
-                        data: [0.23, 1.67],
-                        backgroundColor: [chartColors.secondary, chartColors.primary],
-                        borderColor: [chartColors.tertiary, chartColors.dark],
-                        borderWidth: 1
-                    }]
-                },
-                options: { ...defaultChartOptions, plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } } }
-            });
-
-            new Chart(document.getElementById('sociChart'), {
-                type: 'doughnut',
-                data: {
-                    labels: ['Finance', 'Health', 'Food', 'Transport', 'Data/Cloud', 'Defence', 'Education', 'Energy', 'Comms', 'Space', 'Water'],
-                    datasets: [{
-                        label: 'Sectors',
-                        data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-                        backgroundColor: [chartColors.primary, chartColors.secondary, chartColors.tertiary, '#FCD34D', '#FDBA74', '#FB923C', '#F97316', '#EA580C', '#C2410C', '#9A3412', '#7C2D12'],
-                        borderColor: '#F8F7F4',
-                        borderWidth: 2
-                    }]
-                },
-                options: { ...defaultChartOptions, plugins: { legend: { position: 'right' }, tooltip: { callbacks: { title: tooltipTitleCallback } } } }
-            });
-
-            new Chart(document.getElementById('shieldsChart'), {
-                type: 'radar',
-                data: {
-                    labels: ['Businesses & Citizens', 'Safe Tech', 'Threat Sharing', 'Critical Infra', 'Sovereign Capability', 'Global Leadership'],
-                    datasets: [{
-                        label: 'Focus Area',
-                        data: [5, 5, 4, 5, 4, 5],
-                        fill: true,
-                        backgroundColor: 'rgba(217, 119, 6, 0.2)',
-                        borderColor: chartColors.primary,
-                        pointBackgroundColor: chartColors.primary,
-                        pointBorderColor: '#fff',
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } },
-                    scales: {
-                        r: {
-                            angleLines: { color: chartColors.grid },
-                            grid: { color: chartColors.grid },
-                            pointLabels: { color: chartColors.text, font: { size: 12 } },
-                            ticks: { display: false, beginAtZero: true }
-                        }
-                    }
-                }
-            });
-
-            new Chart(document.getElementById('regulationChart'), {
-                type: 'line',
-                data: {
-                    labels: ['2016', '2020', '2023+'],
-                    datasets: [{
-                        label: 'Conceptual Regulatory Intensity',
-                        data: [2, 7, 9],
-                        fill: true,
-                        borderColor: chartColors.primary,
-                        backgroundColor: 'rgba(217, 119, 6, 0.1)',
-                        tension: 0.3,
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } },
-                    scales: {
-                        y: {
-                            ticks: {
-                                color: chartColors.text,
-                                callback: (value) => {
-                                    if (value >= 8) return 'High';
-                                    if (value >= 4 && value < 8) return 'Medium';
-                                    if (value >= 0 && value < 4) return 'Low';
-                                    return null;
-                                }
-                            },
-                            grid: { color: chartColors.grid },
-                            min: 0,
-                            max: 10
-                        },
-                        x: { ticks: { color: chartColors.text }, grid: { display: false } }
-                    }
-                }
-            });
-
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        navLinks.forEach(link => {
-                            link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
-                        });
-                    }
-                });
-            }, { rootMargin: "-50% 0px -50% 0px" });
-            sections.forEach(section => observer.observe(section));
-        });
-    </script>
 </body>
 </html>
